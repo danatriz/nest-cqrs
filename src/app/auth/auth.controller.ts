@@ -14,7 +14,7 @@ export class AppController {
   async forgotPasswordRequest(
     @Body() req: UserCheckReq
   ) {
-    const checkUsername = await this.queryBus.execute(new CheckUsernameQuery(req.Username));
+    const checkUsername = await this.queryBus.execute(new CheckUsernameQuery(req));
     if (checkUsername.length === 0) {
       return {
         status: 400,

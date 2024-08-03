@@ -4,13 +4,15 @@ import { AppController } from "./auth.controller";
 import { CheckUsernameHandler } from "./queries/handlers/checkUsername.handler";
 import { AuthRepository } from "./repositories/auth.repository";
 import { PostgresqlConnection } from "src/config/databases/postgre.connection";
+import { TarantoolConfig } from "src/config/databases/tarantool.connection";
 
 @Module({
     imports: [CqrsModule],
     providers: [
         AuthRepository,
         CheckUsernameHandler,
-        PostgresqlConnection
+        PostgresqlConnection,
+        TarantoolConfig
     ],
     controllers: [AppController]
 })

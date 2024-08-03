@@ -1,6 +1,6 @@
 import { Injectable, OnModuleInit, Logger } from '@nestjs/common';
 import { Client } from 'pg';
-import { drizzle } from 'drizzle-orm/node-postgres';
+// import { drizzle } from 'drizzle-orm/node-postgres';
 // import * as schema from '../../databases/postgresql/schema';
 
 @Injectable()

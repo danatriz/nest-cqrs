@@ -9,6 +9,6 @@ export class CheckUsernameHandler implements IQueryHandler<CheckUsernameQuery> {
     ) {}
 
     async execute(query: CheckUsernameQuery) {
-        return this.repository.checkUsername(query.username);
+        return this.repository.checkUsername(query.req);
     }
 }

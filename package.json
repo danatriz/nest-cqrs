@@ -29,7 +29,8 @@
     "drizzle-orm": "^0.32.1",
     "pg": "^8.12.0",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "tarantool-driver": "file:../node-tarantool-driver"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",

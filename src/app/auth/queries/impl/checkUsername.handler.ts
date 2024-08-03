@@ -1,4 +1,5 @@
+import { UserCheckReq } from "../../dtos/user.req";
 
 export class CheckUsernameQuery {
-    constructor(public readonly username: string) {}
+    constructor(public readonly req: UserCheckReq) {}
 }
